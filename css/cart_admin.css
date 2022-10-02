@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header .header-top {
+  height: 45px;
+  width: 100%;
+}
+.header .header-top .container .row .col-md-6 ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.header .header-top .container .row .col-md-6 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-icon:hover {
+  background-color: rgb(66, 66, 240);
+}
+.header .header-icons:hover {
+  background-color: rgb(179, 38, 28);
+}
+.header .header-middle {
+  height: 80px;
+}
+.header .header-middle .container {
+  border-bottom: 2px solid gray;
+}
+.header .header-middle .container .row .col-md-4 .logo a img {
+  width: 100px;
+  padding-top: 10px;
+}
+.header .header-middle .col-md-8 .shop-menu ul {
+  list-style-type: none;
+}
+.header .header-middle .col-md-8 .shop-menu ul li {
+  padding: 25px 20px 0 0;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a:hover {
+  color: #fe980f;
+}
+.header .header-bottom {
+  height: 60px;
+}
+.header .header-bottom ul li a:hover {
+  color: #fe980f;
+}
+
+#create-title #results {
+  position: fixed;
+  top: 15%;
+  width: 20%;
+  height: 500px;
+  float: left;
+  border: 1px solid;
+  background: linear-gradient(to top, #33624d, #799d63);
+  margin-left: 40px;
+  margin-top: 80px;
+}
+#create-title #results #sideNav {
+  z-index: 2;
+  margin: 10px 20px !important;
+}
+#create-title #results #sideNav .sideNav-input input {
+  margin: 10px;
+  width: 200px;
+}
+#create-title #results #sideNav .addProduct {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 130px;
+}
+#create-title #results #menuBtn {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+#create-title #results #menuBtn i {
+  color: yellow;
+}
+#create-title #result {
+  width: 75%;
+  height: 1000px;
+  float: right;
+}/*# sourceMappingURL=cart_admin.css.map */

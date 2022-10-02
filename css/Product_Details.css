@@ -1,0 +1,167 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  line-height: 0.5;
+}
+.header .header-top {
+  height: 45px;
+  width: 100%;
+}
+.header .header-top .container .row .col-md-6 ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.header .header-top .container .row .col-md-6 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-icon:hover {
+  background-color: rgb(66, 66, 240);
+}
+.header .header-icons:hover {
+  background-color: rgb(179, 38, 28);
+}
+.header .header-middle {
+  height: 80px;
+}
+.header .header-middle .container {
+  border-bottom: 2px solid gray;
+}
+.header .header-middle .container .row .col-md-4 .logo a img {
+  width: 100px;
+  padding-top: 10px;
+}
+.header .header-middle .col-md-8 .shop-menu ul {
+  list-style-type: none;
+}
+.header .header-middle .col-md-8 .shop-menu ul li {
+  padding: 25px 20px 0 0;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-middle .col-md-8 .shop-menu ul li a:hover {
+  color: #fe980f;
+}
+.header .header-bottom {
+  height: 60px;
+}
+.header .header-bottom ul li a:hover {
+  color: #fe980f;
+}
+
+.cart_fooders #result {
+  height: 100%;
+}
+
+.container .row {
+  margin-top: 50px;
+  display: flex;
+}
+.container .row #img-title img {
+  border: 0.1px solid gray;
+  width: 350px;
+  height: 400px;
+}
+.container .row .img-text {
+  margin-left: -5px;
+}
+.container .row .img-text ul {
+  list-style: none;
+}
+.container .row .img-text ul li img {
+  width: 80px;
+  border: 0.2px solid gray;
+}
+.container .row #results {
+  position: relative;
+  left: -100px;
+  line-height: 4;
+  border: 0.1 solid gray;
+}
+
+.content {
+  position: relative;
+  top: 10% !important;
+  right: 30%;
+  height: 50%;
+  width: 100%;
+}
+.content .container {
+  width: 100%;
+}
+.content .container .row .carousel .carousel-inner .content-text {
+  text-align: center;
+  margin: 10px;
+  color: #ffd700;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row {
+  width: 100%;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title {
+  width: 30%;
+  background: linear-gradient(to right, #33624d, #799d63) !important;
+  margin: 10px 0 0 45px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title .content-title-tex {
+  color: #ffd700;
+  font-size: 20px;
+  font-weight: 800;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title .content-img {
+  width: 100%;
+  height: 150px;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title .content-top-btn a {
+  position: relative;
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 30px;
+  color: black;
+  border: 0.5px solid #ffd700;
+  z-index: 1;
+  transition: color 0.5s;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title .content-top-btn a span {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffd700;
+  z-index: -1;
+  transition: 0.5s;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title .content-top-btn a:hover span {
+  width: 100%;
+}
+.content .container .row .carousel .carousel-inner .carousel-item .container .row .content-title .content-top-btn a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .content-title {
+    width: 35% !important;
+    margin: auto !important;
+  }
+}
+@media screen and (max-width: 567px) {
+  .content-title {
+    width: 60% !important;
+    margin: auto !important;
+  }
+}/*# sourceMappingURL=Product_Details.css.map */

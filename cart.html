@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- header top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav " style="float: left;">
+                            <li><a href="#"><i class="bi bi-telephone-fill"></i> +03 78 570 940</a></li>
+                            <li><a href="#"><i class="bi bi-envelope-fill"></i> anhviet@gmai.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav" style="float: right;">
+                            <li class="header-icon"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-dribbble"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-google-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- header-middle -->
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo" style="float: left;">
+                            <a href="#"><img src="./img/logocaycanh-removebg-preview.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="shop-menu pull-right" style="float: right;">
+                            <ul class="nav ">
+                                <li><a href="#" class="header-middles"><i class="bi bi-person-fill"></i> Account</a>
+                                </li>
+                                <li><a href="#" class="header-middles"><i class="bi bi-star-fill"></i> Wishlist</a></li>
+                                <li><a href="checkout.html" class="header-middles"><i class="bi bi-arrows-move"></i>
+                                        Checkout</a></li>
+                                <li><a href="cart.html" class="header-middles"><i class="bi bi-cart-fill"></i> Cart</a>
+                                </li>
+                                <li><a href="login.html" class="header-middles"><i class="bi bi-lock-fill"></i>
+                                        Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- header-bottom -->
+        <div class="header-bottom">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <!-- <div class="col-sm-12"> -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Products</a></li>
+                                    <li><a class="dropdown-item" href="#">Product Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </nav>
+        </div>
+        <div class="navigation">
+            <div class="navigation-left"></div>
+            <div class="navigation-right"></div>
+        </div>
+        <!-- end -->
+    </div>
+    <!-- end -->                  
+
+    <!-- cart -->
+    <div class="cart_items">
+        <div class="container">
+            <div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li class="active">Home Cart</li>
+				</ol>
+			</div>
+            <div class="table-responsive cart_info">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr class="cart_menu">
+                            <td class="image">Item</td>
+                            <td class="description"></td>
+                            <td class="price">Price</td>
+                            <td class="quantity">Quantity</td>
+                            <td class="total">Total</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cart_product">
+                                <span></span>
+                                <a href=""><img src="./img/caycanhmini1-removebg-preview.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Colorblock Scuba</a></h4>
+                                <p>Web ID: 1089772</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>$30</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1"
+                                        autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$30</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="./img/caycanhmini2-removebg-preview.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Colorblock Scuba</a></h4>
+                                <p>Web ID: 1089772</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>$26</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1"
+                                        autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$26</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="./img/caycanhmini3-removebg-preview.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Colorblock Scuba</a></h4>
+                                <p>Web ID: 1089772</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>$28</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1"
+                                        autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$28</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- action -->
+    <section id="do_action">
+		<div class="container">
+			<div class="heading">
+				<h3>What would you like to do next?</h3>
+				<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 do_action_title">
+					<div class="chose_area">
+						<ul class="user_option">
+							<li>
+								<input type="checkbox">
+								<label>Use Coupon Code</label>
+							</li>
+							<li>
+								<input type="checkbox">
+								<label>Use Gift Voucher</label>
+							</li>
+							<li>
+								<input type="checkbox">
+								<label>Estimate Shipping & Taxes</label>
+							</li>
+						</ul>
+						<ul class="user_info">
+							<li class="single_field">
+								<label>Country:</label>
+								<select>
+									<option>United States</option>
+									<option>Bangladesh</option>
+									<option>UK</option>
+									<option>India</option>
+									<option>Pakistan</option>
+									<option>Ucrane</option>
+									<option>Canada</option>
+									<option>Dubai</option>
+								</select>
+								
+							</li>
+							<li class="single_field">
+								<label>Region / State:</label>
+								<select>
+									<option>Select</option>
+									<option>Dhaka</option>
+									<option>London</option>
+									<option>Dillih</option>
+									<option>Lahore</option>
+									<option>Alaska</option>
+									<option>Canada</option>
+									<option>Dubai</option>
+								</select>
+							
+							</li>
+							<li class="single_field zip-field">
+								<label>Zip Code:</label>
+								<input type="text">
+							</li>
+						</ul>
+						<a class="btn btn-default update" href="">Get Quotes</a>
+						<a class="btn btn-default check_out" href="">Continue</a>
+					</div>
+				</div>
+				<div class="col-md-6 do_action_title-button">
+					<div class="total_area">
+						<ul>
+							<li>Cart Sub Total <span>$28</span></li>
+							<li>Eco Tax <span>$2</span></li>
+							<li>Shipping Cost <span>Free</span></li>
+							<li>Total <span>$61</span></li>
+						</ul>
+							<a class="btn btn-default update" href="">Update</a>
+							<a class="btn btn-default check_out" href="">Check Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#do_action-->
+
+    <!-- fooder -->
+    <div class="fooder">
+        <div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<img src="./img/logocaycanh-removebg-preview.png" alt="">
+							<p>
+                                National beautiful bonsai festival from Vietnam</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="./img/caycanhvideo1.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="bi bi-play-circle-fill"></i>
+									</div>
+								</a>
+								<p class="video-gallery-text">Circle of Hands</p>
+								<h5 class="video-gallery-text">24 DEC 2014</h5>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="./img/caycanhvideo2.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="bi bi-play-circle-fill"></i>
+									</div>
+								</a>
+								<p class="video-gallery-text">Circle of Hands</p>
+								<h5 class="video-gallery-text">24 DEC 2014</h5>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="./img/caycanhvideo3.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="bi bi-play-circle-fill"></i>
+									</div>
+								</a>
+								<p class="video-gallery-text">Circle of Hands</p>
+								<h5 class="video-gallery-text">24 DEC 2014</h5>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="./img/caycanhvideo4.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="bi bi-play-circle-fill"></i>
+									</div>
+								</a>
+								<p class="video-gallery-text">Circle of Hands</p>
+								<h5 class="video-gallery-text">24 DEC 2014</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="./img/bando1-removebg-preview.png" alt="" />
+							<p class="address-text">505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 footer-widget-title">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Online Help</a></li>
+								<li><a href="">Contact Us</a></li>
+								<li><a href="">Order Status</a></li>
+								<li><a href="">Change Location</a></li>
+								<li><a href="">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">T-Shirt</a></li>
+								<li><a href="">Mens</a></li>
+								<li><a href="">Womens</a></li>
+								<li><a href="">Gift Cards</a></li>
+								<li><a href="">Shoes</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Terms of Use</a></li>
+								<li><a href="">Privecy Policy</a></li>
+								<li><a href="">Refund Policy</a></li>
+								<li><a href="">Billing System</a></li>
+								<li><a href="">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Company Information</a></li>
+								<li><a href="">Careers</a></li>
+								<li><a href="">Store Location</a></li>
+								<li><a href="">Affillate Program</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="bi bi-arrow-right-circle-fill"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- end -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

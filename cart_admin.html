@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart_style.css">
+    <link rel="stylesheet" href="./css/cart_admin.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav " style="float: left;">
+                            <li><a href="#"><i class="bi bi-telephone-fill"></i> +03 78 570 940</a></li>
+                            <li><a href="#"><i class="bi bi-envelope-fill"></i> anhviet@gmai.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav" style="float: right;">
+                            <li class="header-icon"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-dribbble"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-google-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo" style="float: left;">
+                            <a href="#"><img src="#" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="shop-menu pull-right" style="float: right;">
+                            <ul class="nav ">
+                                <li><a href="#" class="header-middles"><i class="bi bi-person-fill"></i> Account</a>
+                                </li>
+                                <li><a href="#" class="header-middles"><i class="bi bi-star-fill"></i> Wishlist</a></li>
+                                <li><a href="checkout.html" class="header-middles"><i class="bi bi-arrows-move"></i>
+                                        Checkout</a></li>
+                                <li><a href="cart.html" class="header-middles"><i class="bi bi-cart-fill"></i> Cart</a>
+                                </li>
+                                <li><a href="login.html" class="header-middles"><i class="bi bi-lock-fill"></i>
+                                        Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Products</a></li>
+                                    <li><a class="dropdown-item" href="#">Product Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <h1 style="text-align: center; margin-top: 100px;">Sản Phẩm Cây cảnh</h1>
+    <div id="create-title">
+        <div id="results">
+            <!-- sideNav -->
+            <div id="menuBtn">
+                <span id="menu">More Product <i class="bi bi-align-center"></i></span>
+            </div>
+            <section id="sideNav">
+                <div class="sideNav-input">
+                    <input id="imgAdd" type="text" placeholder="New img product">
+                    <input id="nameAdd" type="text" placeholder="New name product">
+                    <input id="priceAdd" type="text" placeholder="New price product">
+                    <button class="addProduct" onclick="createProduct()">AddProduct</button>
+                </div>
+            </section>
+            <div id="menuBtn">
+                <span id="menu">Edit Product <i class="bi bi-align-center"></i></span>
+            </div>
+            <section id="sideNav">
+                <div class="sideNav-input">
+                    <input id="imgUpdate" type="text" placeholder="New img product">
+                    <input id="nameUpdate" type="text" placeholder="New name product">
+                    <input id="priceUpdate" type="text" placeholder="New price product">
+                    <button class="addProduct" onclick="updateProduct()">updateProduct</button>
+                </div>
+            </section>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+<script src="./Js/product.js"></script>
+<script src="./Js/manageProduct.js"></script>
+
+
+</html>
