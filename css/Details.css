@@ -6,6 +6,7 @@ height: 500px; */
 
 #create-mains {
     /* padding-left: 20px; */
+
     position: relative;
     left: 40px;
 }
@@ -18,4 +19,21 @@ height: 500px; */
 
 #button {
     line-height: 0.7;
+}
+
+.create_table {
+    width: 500px;
+    position: relative;
+    top: 5% !important;
+}
+
+span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #33624d, #799d63);
+    z-index: 20;
+    transition: 0.5s;
 }

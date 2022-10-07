@@ -36,7 +36,7 @@
         <label for="fname">Username </label>
         <input type="text" name="" id="name"> <br> <br>
         <label for="lname">Password</label>
-        <input type="text" name="" id="password"> <br> <br>
+        <input type="password" name="" id="password"> <br> <br>
         <button onclick="myFunction()">Login</button>
         <!-- <a href="" onclick="myFunction()">Login</a> -->
         <!-- <input type="button" onclick="add()" name="" id="" value="login"> -->
@@ -47,8 +47,8 @@
         let admin = document.getElementById("name").value;
         let password = document.getElementById("password").value;
         if (admin === "viet" && password === "viet2001") {
-            alert = "Đăng nhập thành công"
-            return location.href = "./cart_admin.html"
+            alert("Đăng nhập thành công")
+           window.location.href = "./cart_admin.html"
 
         } else {
             alert("Sai mặt khẩu")

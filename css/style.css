@@ -402,8 +402,8 @@ body {
 }
 .cart_fooders #result {
   position: fixed;
-  top: 12%;
-  left: 61%;
+  top: 15%;
+  left: 58%;
   background-color: gray;
   z-index: 888;
 }

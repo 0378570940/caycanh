@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Details.css">
+    <link rel="stylesheet" href="../css/Product_Details.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav " style="float: left;">
+                            <li><a href="#"><i class="bi bi-telephone-fill"></i> +03 78 570 940</a></li>
+                            <li><a href="#"><i class="bi bi-envelope-fill"></i> anhviet@gmai.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav" style="float: right;">
+                            <li class="header-icon"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="header-icon"><a href="#"><i class="bi bi-dribbble"></i></a></li>
+                            <li class="header-icons"><a href="#"><i class="bi bi-google-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo" style="float: left;">
+                            <a href="#"><img src="#" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="shop-menu pull-right" style="float: right;">
+                            <ul class="nav ">
+                                <li><a href="#" class="header-middles"><i class="bi bi-person-fill"></i> Account</a>
+                                </li>
+                                <li><a href="#" class="header-middles"><i class="bi bi-star-fill"></i> Wishlist</a></li>
+                                <li><a href="checkout.html" class="header-middles"><i class="bi bi-arrows-move"></i>
+                                        Checkout</a></li>
+                                <li><a href="cart.html" class="header-middles"><i class="bi bi-cart-fill"></i> Cart</a>
+                                </li>
+                                <li><a href="login.html" class="header-middles"><i class="bi bi-lock-fill"></i>
+                                        Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Products</a></li>
+                                    <li><a class="dropdown-item" href="#">Product Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Giỏ hàng -->
+    <div class="cart_fooders">
+        <button id="cart_fooder" onclick="cartDisplay1()"><i class="bi bi-cart3"></i></button>
+        <div id="result"></div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <!-- <div id="creates-title"> -->
+            <div id="img-title" class="col-4">
+                <img src="../img/caycanhmini2-removebg-preview.png" id="img-main" alt="">
+            </div>
+            <div class="col-4 img-text">
+                <ul class="">
+                    <li><img src="../img/caycanhmini2-removebg-preview.png" alt="" onclick="chengeImage('one')"
+                            id="one">
+                    </li>
+                    <li><img src="../img/caycanhmini1-removebg-preview.png" alt="" onclick="chengeImage('two')"
+                            id="two">
+                    </li>
+                    <li><img src="../img/caycanhmini3-removebg-preview.png" alt="" onclick="chengeImage('three')"
+                            id="three">
+                    </li>
+                    <li><img src="../img/caycanhmini4-removebg-preview.png" alt="" onclick="chengeImage('four')"
+                            id="four">
+                    </li>
+                </ul>
+
+            </div>
+            <div id="results" class="col-4"></div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- content -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <h3 class="content-text">RECOMMENDED ITEMS</h3>
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row content-titles">
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard1-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 26</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard2-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard3-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 24</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard4-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 22</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-light">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard5-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard6-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard7-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard8-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard9-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard10-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard11-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 content-title">
+                                        <img src="../img/caycanhcard12-removebg-preview.png" class="content-img" alt="">
+                                        <p class="content-title-tex">$ 30</p>
+                                        <p>Cây lưỡi hổ </p>
+                                        <div class="content-top-btn">
+                                            <a href="#"><span></span>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+</body>
+<script>
+    function chengeImage(id) {
+        let img = document.getElementById(id).getAttribute('src')
+        document.getElementById('img-main').setAttribute('src', img)
+    }
+</script>
+<script src="../details_js/Details.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../details_js/manageDetails.js"></script>
+<script src="../details_js/manage_details1.js"></script>
+<script src="../js/style.js"></script>
+
+</html>

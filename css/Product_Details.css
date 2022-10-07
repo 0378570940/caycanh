@@ -61,7 +61,7 @@ body {
 }
 
 .cart_fooders #result {
-  height: 100%;
+  background: linear-gradient(to top, #33624d, #799d63);
 }
 
 .container .row {

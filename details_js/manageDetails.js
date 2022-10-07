@@ -1,5 +1,5 @@
 array=[]
-let d1= new Details('CAY HOA GIÁY','US 15$',20,'New','CAYXANH')
+let d1= new Details('CAY HOA GIÁY','US 20$',20,'New','CAYXANH')
 array.push(d1)
 localStorage.setItem("list",JSON.stringify(array))
 
@@ -10,10 +10,10 @@ function createrDetails(){
         data+="<div id='create-mains'>"
         data+= "<h2>"+array[i].name+"</h2>"
         data+= "<div class='main-proce'>"+array[i].price+"</div>"
-        data+= "<div class='main-quantity'>"+"Quantity: " +"<input style='width:50px; height:30px;'>"+array[i].quantity+"</input>"+"</div>"
+        data+= "<div class='main-quantity'>"+"Quantity: " +"<input style='width:50px; height:30px; text-align: create;' value='"+array[i].quantity+"' >"+"</div>"
         data+= "<div class='main-condition'>"+"Condition: "+array[i].condition+"</div>"
         data+= "<div class='main-brand'>"+"Brand: "+array[i].brand+"</div>"
-        data+="<button id='button' style='width:150px; height:40px; ' onclick='addCart("+i+")'>Add to Cart</button>"
+        data+="<button id='button' style='width:150px; height:40px; ' onclick='addCart("+i+")'><span></span>Add to Cart</button>"
         // data+="<td><button id='button' onclick='deleteProduct("+i+")'>Delete</button></td>"
         // data+="<td><button id='button' onclick='cartProduct("+i+")'>AddCart</button></td>" 
         data+="</div>"

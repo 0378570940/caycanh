@@ -1,8 +1,8 @@
 class Cart{
-    product
+    details
     amount
-    constructor(product,amount){
-        this.product=product;
+    constructor(details,amount){
+        this.details=details;
         this.amount=amount;
     }
 }

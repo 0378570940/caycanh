@@ -1,12 +1,12 @@
 {/* <script src="/product.js"></script> */}
 // import {Product} from './product.js'
 array=[]
-let p1= new Product('/img/caycanhcard1-removebg-preview.png','cay hoa giáy','15$')
-let p2= new Product("../img/caycanhcard10-removebg-preview.png", "Cay Mộc Lan1", "15$")
-let p3= new Product("../img/caycanhcard11-removebg-preview.png", "Cay Mộc Lan2", "15$")
-let p4= new Product("../img/caycanhcard12-removebg-preview.png", "Cay Mộc Lan3", "15$")
-let p5= new Product("../img/caycanhcard12-removebg-preview.png", "Cay Mộc Lan3", "15$")
-let p6= new Product("../img/caycanhcard12-removebg-preview.png", "Cay Mộc Lan3", "15$")
+let p1= new Product('img/caycanhcard1-removebg-preview.png','cay hoa giáy','15$')
+let p2= new Product("img/caycanhcard10-removebg-preview.png", "Cay Mộc Lan1", "15$")
+let p3= new Product("img/caycanhcard11-removebg-preview.png", "Cay Mộc Lan2", "15$")
+let p4= new Product("img/caycanhcard12-removebg-preview.png", "Cay Mộc Lan3", "15$")
+let p5= new Product("img/caycanhcard12-removebg-preview.png", "Cay Mộc Lan3", "15$")
+let p6= new Product("img/caycanhcard12-removebg-preview.png", "Cay Mộc Lan3", "15$")
 array.push(p1)
 array.push(p2)
 array.push(p3)
@@ -20,7 +20,7 @@ function createrCart(){
     let data="<div id='create-main' style='display: grid; grid-template-columns: auto auto ;'>"
     for(let i=0; i<array.length;i++){
         data+="<div id='create-mains'>"
-        data+="<p class='create-main-text'>"+"<img src='../img/caycanhcard1-removebg-preview.png'>"+"</p>"
+        data+="<p class='create-main-text'>"+"<img src="+array[i].img+" style='width: 150px; margin-left: 80px; height: 200px;'>"+"</p>"
         data+= "<h2>"+array[i].name+"</h2>"
         data+= "<div class='main-proce'>"+array[i].price+"</div>"
         data+="<td><button id='button' onclick='editProduct("+i+")'>Edit</button></td>"
